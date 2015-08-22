@@ -1,2 +1,2 @@
 #Rust Articles Translation
-## 1. Arrays and Vectors  - August 22, 2015
+## [1. Arrays and Vectors](https://github.com/ScottHuangZL/Rust-Articles-Translation/blob/master/Arrays%20and%20Vectors%20-%20Chinese.md "1.Arrays and Vectors")  - Translate @ August 22, 2015
