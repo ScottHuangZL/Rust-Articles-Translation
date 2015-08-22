@@ -3,7 +3,7 @@
 
 翻译者： Scott Huang
 
-翻译日期： Augusts 22,2015 于厦门
+翻译日期： August 22,2015 于厦门
 
 Rust and Go
 
