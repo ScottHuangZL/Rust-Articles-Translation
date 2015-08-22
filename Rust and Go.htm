@@ -1,0 +1,2205 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 15">
+<meta name=Originator content="Microsoft Word 15">
+<link rel=File-List href="Rust%20and%20Go_files/filelist.xml">
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Huang, Scott</o:Author>
+  <o:Keywords>No Restrictions</o:Keywords>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>Huang, Scott</o:LastAuthor>
+  <o:Revision>66</o:Revision>
+  <o:TotalTime>165</o:TotalTime>
+  <o:Created>2015-08-22T14:37:00Z</o:Created>
+  <o:LastSaved>2015-08-22T15:46:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>2698</o:Words>
+  <o:Characters>12710</o:Characters>
+  <o:Company>Dell Inc</o:Company>
+  <o:Bytes>164648</o:Bytes>
+  <o:Lines>373</o:Lines>
+  <o:Paragraphs>141</o:Paragraphs>
+  <o:CharactersWithSpaces>15267</o:CharactersWithSpaces>
+  <o:Version>15.00</o:Version>
+ </o:DocumentProperties>
+ <o:CustomDocumentProperties>
+  <o:TitusGUID dt:dt="string">350dc474-46b5-4b80-a144-46c60bf73c99</o:TitusGUID>
+  <o:DellClassification dt:dt="string">No Restrictions</o:DellClassification>
+  <o:DellSubLabels dt:dt="string"></o:DellSubLabels>
+ </o:CustomDocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+<link rel=themeData href="Rust%20and%20Go_files/themedata.thmx">
+<link rel=colorSchemeMapping href="Rust%20and%20Go_files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>ZH-CN</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:EnableOpenTypeKerning/>
+   <w:DontFlipMirrorIndents/>
+   <w:OverrideTableStyleHps/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
+  DefSemiHidden="false" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="371">
+  <w:LsdException Locked="false" Priority="0" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 9"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="header"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footer"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index heading"/>
+  <w:LsdException Locked="false" Priority="35" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of figures"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope return"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="line number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="page number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of authorities"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="macro"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toa heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 5"/>
+  <w:LsdException Locked="false" Priority="10" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Closing"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Signature"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Message Header"/>
+  <w:LsdException Locked="false" Priority="11" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Salutation"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Date"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Note Heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Block Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Hyperlink"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="FollowedHyperlink"/>
+  <w:LsdException Locked="false" Priority="22" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Document Map"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Plain Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="E-mail Signature"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Top of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Bottom of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal (Web)"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Acronym"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Cite"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Code"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Definition"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Keyboard"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Preformatted"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Sample"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Typewriter"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Variable"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Table"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation subject"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="No List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Contemporary"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Elegant"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Professional"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Balloon Text"/>
+  <w:LsdException Locked="false" Priority="39" Name="Table Grid"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Theme"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" QFormat="true"
+   Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" QFormat="true"
+   Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" QFormat="true"
+   Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" QFormat="true"
+   Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" QFormat="true"
+   Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" QFormat="true"
+   Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"/>
+  <w:LsdException Locked="false" Priority="41" Name="Plain Table 1"/>
+  <w:LsdException Locked="false" Priority="42" Name="Plain Table 2"/>
+  <w:LsdException Locked="false" Priority="43" Name="Plain Table 3"/>
+  <w:LsdException Locked="false" Priority="44" Name="Plain Table 4"/>
+  <w:LsdException Locked="false" Priority="45" Name="Plain Table 5"/>
+  <w:LsdException Locked="false" Priority="40" Name="Grid Table Light"/>
+  <w:LsdException Locked="false" Priority="46" Name="Grid Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="Grid Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="Grid Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="46" Name="List Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="List Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="List Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 6"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:SimSun;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:\5B8B\4F53;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 680460288 22 0 262145 0;}
+@font-face
+	{font-family:PMingLiU;
+	panose-1:2 2 5 0 0 0 0 0 0 0;
+	mso-font-alt:\65B0\7D30\660E\9AD4;
+	mso-font-charset:136;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610611969 684719354 22 0 1048577 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:1;
+	mso-generic-font-family:roman;
+	mso-font-format:other;
+	mso-font-pitch:variable;
+	mso-font-signature:0 0 0 0 0 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-520092929 1073786111 9 0 415 0;}
+@font-face
+	{font-family:"Lucida Sans Unicode";
+	panose-1:2 11 6 2 3 5 4 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-2147480833 14699 0 0 191 0;}
+@font-face
+	{font-family:Georgia;
+	panose-1:2 4 5 2 5 4 5 2 3 3;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:647 0 0 0 159 0;}
+@font-face
+	{font-family:"\@SimSun";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 680460288 22 0 262145 0;}
+@font-face
+	{font-family:"\@PMingLiU";
+	panose-1:2 2 5 0 0 0 0 0 0 0;
+	mso-font-charset:136;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610611969 684719354 22 0 1048577 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:106%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+h2
+	{mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 2 Char";
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";}
+h3
+	{mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 3 Char";
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:3;
+	font-size:13.5pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";}
+h4
+	{mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 4 Char";
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:4;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:#954F72;
+	mso-themecolor:followedhyperlink;
+	text-decoration:underline;
+	text-underline:single;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 2";
+	mso-ansi-font-size:18.0pt;
+	mso-bidi-font-size:18.0pt;
+	font-family:"Times New Roman",serif;
+	mso-ascii-font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	font-weight:bold;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 3";
+	mso-ansi-font-size:13.5pt;
+	mso-bidi-font-size:13.5pt;
+	font-family:"Times New Roman",serif;
+	mso-ascii-font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	font-weight:bold;}
+span.Heading4Char
+	{mso-style-name:"Heading 4 Char";
+	mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 4";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-ascii-font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	font-weight:bold;}
+p.graf--p, li.graf--p, div.graf--p
+	{mso-style-name:graf--p;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";}
+span.apple-converted-space
+	{mso-style-name:apple-converted-space;
+	mso-style-unhide:no;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:22173827;
+	mso-list-template-ids:-1230362226;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l0:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l0:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l0:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l0:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l0:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l0:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l0:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l0:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l1
+	{mso-list-id:979919462;
+	mso-list-template-ids:2038718086;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l1:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l1:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l1:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l1:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l1:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l1:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l1:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1026"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US link=blue vlink="#954F72" style='tab-interval:.5in'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span lang=ZH-CN style='font-size:16.5pt;font-family:"PMingLiU",serif;
+mso-bidi-font-family:PMingLiU;letter-spacing:.1pt'>&#21407;&#25991;</span><span
+style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>:
+<a href="https://medium.com/@adamhjk/rust-and-go-e18d511fbd95">https://medium.com/@adamhjk/rust-and-go-e18d511fbd95</a><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span lang=ZH-CN style='font-size:16.5pt;font-family:"PMingLiU",serif;
+mso-bidi-font-family:PMingLiU;letter-spacing:.1pt'>&#32763;&#35793;&#32773;&#65306;</span><span
+style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>
+Scott Huang<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span lang=ZH-CN style='font-size:16.5pt;font-family:"PMingLiU",serif;
+mso-bidi-font-family:PMingLiU;letter-spacing:.1pt'>&#32763;&#35793;&#26085;&#26399;&#65306;</span><span
+style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>
+Augusts 22,2015 </span><span lang=ZH-CN style='font-size:16.5pt;font-family:
+"PMingLiU",serif;mso-bidi-font-family:PMingLiU;letter-spacing:.1pt'>&#20110;&#21414;&#38376;</span><span
+style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:30.0pt;margin-right:0in;margin-bottom:
+6.0pt;margin-left:0in;line-height:normal;mso-outline-level:2;background:white'><b><span
+style='font-size:45.0pt;font-family:"Lucida Sans Unicode",sans-serif;
+mso-fareast-font-family:"Times New Roman";letter-spacing:-.5pt'>Rust and Go<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>I’ve
+been spending a bit of my time playing around with new languages</span><span
+style='font-size:16.5pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+"Times New Roman";letter-spacing:.1pt'>&#8202;</span><span style='font-size:
+16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:Georgia;letter-spacing:.1pt'>—</span><span
+style='font-size:16.5pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+"Times New Roman";letter-spacing:.1pt'>&#8202;</span><span style='font-size:
+16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>in
+particular,&nbsp;<a href="http://rust-lang.org/">Rust</a>&nbsp;has captured my
+imagination. The bulk of the code we write at&nbsp;<a
+href="http://www.getchef.com/">Chef</a>&nbsp;is in Ruby, Erlang, and Javascript
+(lately&nbsp;<a href="http://angularjs.org/">Angular</a>.) There are things I
+like about all those languages:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span lang=ZH-CN style='font-size:16.5pt;font-family:"PMingLiU",serif;
+mso-bidi-font-family:PMingLiU;letter-spacing:.1pt'>&#25105;&#24050;&#32463;&#33457;&#20102;&#19981;&#23569;&#26102;&#38388;&#22312;&#25226;&#29609;&#19968;&#20123;&#26032;&#35821;&#35328;</span><span
+style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>
+– </span><span lang=ZH-CN style='font-size:16.5pt;font-family:"PMingLiU",serif;
+mso-bidi-font-family:PMingLiU;letter-spacing:.1pt'>&#29305;&#21035;&#35201;&#25351;&#20986;&#65292;</span><span
+style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>Rust</span><span
+lang=ZH-CN style='font-size:16.5pt;font-family:"PMingLiU",serif;mso-bidi-font-family:
+PMingLiU;letter-spacing:.1pt'>&#25235;&#20303;&#20102;&#25105;&#30340;&#24819;&#35937;&#21147;&#12290;&#25105;&#20204;&#22312;</span><span
+style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>Chef</span><span
+lang=ZH-CN style='font-size:16.5pt;font-family:"PMingLiU",serif;mso-bidi-font-family:
+PMingLiU;letter-spacing:.1pt'>&#20013;&#20351;&#29992;&#22823;&#37327;&#30340;</span><span
+style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>Ruby</span><span
+lang=ZH-CN style='font-size:16.5pt;font-family:"PMingLiU",serif;mso-bidi-font-family:
+PMingLiU;letter-spacing:.1pt'>&#65292;</span><span style='font-size:16.5pt;
+font-family:"Georgia",serif;mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>Erlang</span><span
+lang=ZH-CN style='font-size:16.5pt;font-family:"PMingLiU",serif;mso-bidi-font-family:
+PMingLiU;letter-spacing:.1pt'>&#21644;</span><span style='font-size:16.5pt;
+font-family:"Georgia",serif;mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>Javascript(</span><span
+lang=ZH-CN style='font-size:16.5pt;font-family:"PMingLiU",serif;mso-bidi-font-family:
+PMingLiU;letter-spacing:.1pt'>&#21518;&#26469;&#26159;</span><span
+style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>Angular)</span><span
+lang=ZH-CN style='font-size:16.5pt;font-family:"PMingLiU",serif;mso-bidi-font-family:
+PMingLiU;letter-spacing:.1pt'>&#20195;&#30721;&#12290;&#20197;&#19979;&#26159;&#25105;&#21916;&#27426;&#36825;&#20123;&#35821;&#35328;&#30340;&#20107;&#24773;&#65306;</span><span
+style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;margin-bottom:9.0pt;
+margin-left:22.5pt;text-indent:-.25in;line-height:24.75pt;mso-list:l0 level1 lfo2;
+tab-stops:list .5in;background:white'><![if !supportLists]><span
+style='font-size:10.0pt;mso-bidi-font-size:16.5pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;letter-spacing:.1pt'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:16.5pt;font-family:"Georgia",serif;
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+letter-spacing:.1pt'>Ruby feels like it always hits the “whipuptitude” part of
+my brain. It’s easy to simply sit down and start typing, with very little in
+the way. It also has the expressiveness that I always loved in Perl. The more
+you understand the language, the more it feels like I can express myself in the
+same way I do with English.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;margin-bottom:9.0pt;
+margin-left:22.5pt;text-indent:-.25in;line-height:24.75pt;mso-list:l0 level1 lfo2;
+tab-stops:list .5in;background:white'><![if !supportLists]><span
+style='font-size:10.0pt;mso-bidi-font-size:16.5pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;letter-spacing:.1pt'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:16.5pt;font-family:"Georgia",serif;
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+letter-spacing:.1pt'>Ruby</span><span lang=ZH-CN style='font-size:16.5pt;
+font-family:"PMingLiU",serif;mso-bidi-font-family:PMingLiU;letter-spacing:.1pt'>&#30340;&#24863;&#35273;&#23601;&#20687;&#27704;&#36828;&#22312;&#25970;&#25171;&#25105;&#22836;&#33041;&#20013;</span><span
+style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>“whipuptitude”</span><span
+lang=ZH-CN style='font-size:16.5pt;font-family:"PMingLiU",serif;mso-bidi-font-family:
+PMingLiU;letter-spacing:.1pt'>&#37096;&#20998;&#12290;&#23427;&#24456;&#23481;&#26131;&#65292;&#21487;&#20197;&#31616;&#21333;&#30340;&#22352;&#19979;&#26469;&#24320;&#22987;&#32534;&#30721;&#65292;&#20320;&#22522;&#26412;&#19981;&#20250;&#30896;&#21040;&#22256;&#38590;&#12290;&#23427;&#20063;&#26377;&#31867;&#20284;</span><span
+style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>Perl</span><span
+lang=ZH-CN style='font-size:16.5pt;font-family:"PMingLiU",serif;mso-bidi-font-family:
+PMingLiU;letter-spacing:.1pt'>&#30340;&#25105;&#24456;&#21916;&#27426;&#30340;&#34920;&#36798;&#21147;&#12290;</span><span
+style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;margin-bottom:9.0pt;
+margin-left:22.5pt;line-height:24.75pt;background:white'><span lang=ZH-CN
+style='font-size:16.5pt;font-family:"PMingLiU",serif;mso-bidi-font-family:PMingLiU;
+letter-spacing:.1pt'>&#20320;&#36234;&#29087;&#32451;&#36825;&#20010;&#35821;&#35328;&#65292;&#20320;&#23601;&#20250;&#36234;&#35273;&#24471;&#20320;&#22909;&#20687;&#21487;&#20197;&#29992;&#33521;&#35821;&#65288;&#27597;&#35821;&#65289;&#34920;&#36798;&#33258;&#24049;&#30340;&#24819;&#27861;&#12290;</span><span
+style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;margin-bottom:9.0pt;
+margin-left:22.5pt;text-indent:-.25in;line-height:24.75pt;mso-list:l0 level1 lfo2;
+tab-stops:list .5in;background:white'><![if !supportLists]><span
+style='font-size:10.0pt;mso-bidi-font-size:16.5pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;letter-spacing:.1pt'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:16.5pt;font-family:"Georgia",serif;
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+letter-spacing:.1pt'>Erlang and OTP are glorious to operate. Things like&nbsp;<a
+href="http://erlang.org/doc/reference_manual/patterns.html">pattern matching</a>,
+actor concurrency, single assignment, and a lovely runtime make it a joy to
+run, manage, and debug production services. I think the syntax is awkward, but
+it too has a terse kind of beauty when you soak in it.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;margin-bottom:9.0pt;
+margin-left:22.5pt;text-indent:-.25in;line-height:24.75pt;mso-list:l0 level1 lfo2;
+tab-stops:list .5in;background:white'><![if !supportLists]><span
+style='font-size:10.0pt;mso-bidi-font-size:16.5pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;letter-spacing:.1pt'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:16.5pt;font-family:"Georgia",serif;
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+letter-spacing:.1pt'>Erlang</span><span lang=ZH-CN style='font-size:16.5pt;
+font-family:"PMingLiU",serif;mso-bidi-font-family:PMingLiU;letter-spacing:.1pt'>&#21644;</span><span
+style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>OTP</span><span
+lang=ZH-CN style='font-size:16.5pt;font-family:"PMingLiU",serif;mso-bidi-font-family:
+PMingLiU;letter-spacing:.1pt'>&#26497;&#22909;&#25805;&#20316;&#12290;&#37027;&#20123;&#27169;&#24335;&#21305;&#37197;&#65292;</span><span
+style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>Actor</span><span
+lang=ZH-CN style='font-size:16.5pt;font-family:"PMingLiU",serif;mso-bidi-font-family:
+PMingLiU;letter-spacing:.1pt'>&#24182;&#21457;&#65292;&#21333;&#19968;&#36171;&#20540;&#65292;&#36824;&#26377;&#20196;&#20154;&#24841;&#24555;&#30340;&#36816;&#34892;&#26102;&#23548;&#33268;&#25191;&#34892;&#12289;&#31649;&#29702;&#12289;&#35843;&#35797;&#20135;&#21697;&#26381;&#21153;&#26159;&#19968;&#31181;&#20048;&#36259;&#65292;&#25105;&#35748;&#20026;&#23427;&#35821;&#27861;&#26159;&#19985;&#38475;&#30340;&#65292;&#20294;&#26159;&#24403;&#20320;&#25484;&#25569;&#23427;&#21518;&#65292;&#20320;&#20250;&#21457;&#29616;&#23427;&#30340;&#26576;&#31181;&#31616;&#27905;&#32654;&#12290;</span><span
+style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;margin-bottom:0in;margin-left:
+22.5pt;margin-bottom:.0001pt;text-indent:-.25in;line-height:24.75pt;mso-list:
+l0 level1 lfo2;tab-stops:list .5in;background:white'><![if !supportLists]><span
+style='font-size:10.0pt;mso-bidi-font-size:16.5pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;letter-spacing:.1pt'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:16.5pt;font-family:"Georgia",serif;
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+letter-spacing:.1pt'>Modern Javascript is becoming delightful in its own way.
+The ease with which you can grab community packages and frameworks, the sheer
+expressiveness of things like Angular, and the progressive slimming down of the
+often used parts of the language make the experience delightful again. It used
+to feel awful to me.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;margin-bottom:0in;margin-left:
+22.5pt;margin-bottom:.0001pt;text-indent:-.25in;line-height:24.75pt;mso-list:
+l0 level1 lfo2;tab-stops:list .5in;background:white'><![if !supportLists]><span
+style='font-size:10.0pt;mso-bidi-font-size:16.5pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;letter-spacing:.1pt'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=ZH-CN style='font-size:16.5pt;
+font-family:"PMingLiU",serif;mso-bidi-font-family:PMingLiU;letter-spacing:.1pt'>&#29616;&#20195;</span><span
+style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>Javascrip</span><span
+lang=ZH-CN style='font-size:16.5pt;font-family:"PMingLiU",serif;mso-bidi-font-family:
+PMingLiU;letter-spacing:.1pt'>&#25105;&#34892;&#25105;&#32032;&#30340;&#21464;&#24471;&#36234;&#26469;&#36234;&#35752;&#20154;&#21916;&#27426;&#12290;&#20320;&#24456;&#23481;&#26131;&#23601;&#21487;&#20197;&#33719;&#21462;&#31038;&#21306;&#36129;&#29486;&#30340;&#21508;&#31181;&#21253;&#21644;&#26694;&#26550;&#65292;</span><span
+style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>Angular</span><span
+lang=ZH-CN style='font-size:16.5pt;font-family:"PMingLiU",serif;mso-bidi-font-family:
+PMingLiU;letter-spacing:.1pt'>&#30340;&#34920;&#29616;&#21147;&#38750;&#24120;&#22909;&#65292;&#36824;&#26377;&#19981;&#26029;&#36827;&#27493;&#30340;&#23545;&#35821;&#35328;&#24120;&#29992;&#37096;&#20998;&#30340;&#30246;&#36523;&#20351;&#24471;&#23427;&#20877;&#27425;&#33719;&#21462;&#20102;&#20154;&#20204;&#30340;&#27426;&#24515;&#12290;&#36807;&#21435;&#25105;&#19981;&#21916;&#27426;&#23427;&#12290;</span><span
+style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>So</span><span
+style='font-size:16.5pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+"Times New Roman";letter-spacing:.1pt'>&#8202;</span><span style='font-size:
+16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:Georgia;letter-spacing:.1pt'>—</span><span
+style='font-size:16.5pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+"Times New Roman";letter-spacing:.1pt'>&#8202;</span><span style='font-size:
+16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>I decided to write
+a little Rust and, because everyone in my world seems swoony over it, Go.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span lang=ZH-CN style='font-size:16.5pt;font-family:"PMingLiU",serif;
+mso-bidi-font-family:PMingLiU;letter-spacing:.1pt'>&#25152;&#20197;</span><span
+style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>
+– </span><span lang=ZH-CN style='font-size:16.5pt;font-family:"PMingLiU",serif;
+mso-bidi-font-family:PMingLiU;letter-spacing:.1pt'>&#25105;&#32477;&#23545;&#20889;&#19968;&#20123;</span><span
+style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>Rust</span><span
+lang=ZH-CN style='font-size:16.5pt;font-family:"PMingLiU",serif;mso-bidi-font-family:
+PMingLiU;letter-spacing:.1pt'>&#65292;&#36824;&#26377;</span><span
+style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>Go</span><span
+lang=ZH-CN style='font-size:16.5pt;font-family:"PMingLiU",serif;mso-bidi-font-family:
+PMingLiU;letter-spacing:.1pt'>&#65292;&#22240;&#20026;&#25105;&#21608;&#22260;&#30340;&#20154;&#30475;&#36215;&#26469;&#23545;&#23427;&#24456;&#30528;&#36855;&#12290;</span><span
+style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:30.0pt;margin-right:0in;margin-bottom:
+3.0pt;margin-left:0in;line-height:normal;mso-outline-level:3;background:white'><b><span
+style='font-size:27.0pt;font-family:"Lucida Sans Unicode",sans-serif;
+mso-fareast-font-family:"Times New Roman";letter-spacing:-.25pt'>Rust<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>I
+started paying attention to Rust a couple of months ago. The language is
+designed to fill the same niche as C/C++</span><span style='font-size:16.5pt;
+font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman";
+letter-spacing:.1pt'>&#8202;</span><span style='font-size:16.5pt;font-family:
+"Georgia",serif;mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:
+Georgia;letter-spacing:.1pt'>—</span><span style='font-size:16.5pt;font-family:
+"Times New Roman",serif;mso-fareast-font-family:"Times New Roman";letter-spacing:
+.1pt'>&#8202;</span><span style='font-size:16.5pt;font-family:"Georgia",serif;
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+letter-spacing:.1pt'>suitable for low level programming, with high safety guarantees,
+and a novel approach to memory management (<a
+href="http://doc.rust-lang.org/guide.html#references">borrowing</a>). It also
+has a bunch of language features that I love from Erlang</span><span
+style='font-size:16.5pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+"Times New Roman";letter-spacing:.1pt'>&#8202;</span><span style='font-size:
+16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:Georgia;letter-spacing:.1pt'>—</span><span
+style='font-size:16.5pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+"Times New Roman";letter-spacing:.1pt'>&#8202;</span><span style='font-size:
+16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>pattern matching, actor
+style concurrency, immutable variables.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span lang=ZH-CN style='font-size:16.5pt;font-family:"PMingLiU",serif;
+mso-bidi-font-family:PMingLiU;letter-spacing:.1pt'>&#25105;&#20960;&#20010;&#26376;&#21069;&#24320;&#22987;&#27880;&#24847;&#21040;</span><span
+style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>Rust</span><span
+lang=ZH-CN style='font-size:16.5pt;font-family:"PMingLiU",serif;mso-bidi-font-family:
+PMingLiU;letter-spacing:.1pt'>&#12290;&#36825;&#20010;&#35821;&#35328;&#34987;&#35774;&#35745;&#29992;&#26469;&#21462;&#20195;</span><span
+style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>C/C++</span><span
+lang=ZH-CN style='font-size:16.5pt;font-family:"PMingLiU",serif;mso-bidi-font-family:
+PMingLiU;letter-spacing:.1pt'>&#65292;&#36866;&#21512;&#36827;&#34892;&#24213;&#23618;&#24320;&#21457;&#65292;&#24102;&#26377;&#39640;&#30340;&#23433;&#20840;&#24615;&#20445;&#38556;&#65292;&#21644;&#38761;&#26032;&#24615;&#30340;&#20869;&#23384;&#31649;&#29702;&#26041;&#24335;&#65288;</span><span
+style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>borrowing</span><span
+lang=ZH-CN style='font-size:16.5pt;font-family:"PMingLiU",serif;mso-bidi-font-family:
+PMingLiU;letter-spacing:.1pt'>&#20511;&#29992;&#65289;&#12290;&#23427;&#36824;&#26377;&#25105;&#21916;&#27426;&#30340;&#21644;</span><span
+style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>Erlang</span><span
+lang=ZH-CN style='font-size:16.5pt;font-family:"PMingLiU",serif;mso-bidi-font-family:
+PMingLiU;letter-spacing:.1pt'>&#34542;&#31867;&#20284;&#30340;&#35821;&#35328;&#29305;&#24615;&#65306;&#27169;&#24335;&#21305;&#37197;&#65292;</span><span
+style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>Actor</span><span
+lang=ZH-CN style='font-size:16.5pt;font-family:"PMingLiU",serif;mso-bidi-font-family:
+PMingLiU;letter-spacing:.1pt'>&#26679;&#24335;&#24182;&#21457;&#65292;&#32570;&#30465;&#19981;&#21487;&#21464;&#21464;&#37327;&#12290;</span><span
+style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>My
+history with C/C++ is limited</span><span style='font-size:16.5pt;font-family:
+"Times New Roman",serif;mso-fareast-font-family:"Times New Roman";letter-spacing:
+.1pt'>&#8202;</span><span style='font-size:16.5pt;font-family:"Georgia",serif;
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:Georgia;
+letter-spacing:.1pt'>—</span><span style='font-size:16.5pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman";letter-spacing:.1pt'>&#8202;</span><span
+style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>to
+be honest, my history with any strongly typed language is limited. As a systems
+administrator, there just was rarely a reason to do more than patch someone
+elses code (which I’ve done plenty of</span><span style='font-size:16.5pt;
+font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman";
+letter-spacing:.1pt'>&#8202;</span><span style='font-size:16.5pt;font-family:
+"Georgia",serif;mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:
+Georgia;letter-spacing:.1pt'>—</span><span style='font-size:16.5pt;font-family:
+"Times New Roman",serif;mso-fareast-font-family:"Times New Roman";letter-spacing:
+.1pt'>&#8202;</span><span style='font-size:16.5pt;font-family:"Georgia",serif;
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+letter-spacing:.1pt'>but a patch isn</span><span style='font-size:16.5pt;
+font-family:"Georgia",serif;mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:Georgia;letter-spacing:.1pt'>’</span><span
+style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>t
+the same as writing something from scratch.) In the few experiences I</span><span
+style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:Georgia;letter-spacing:.1pt'>’</span><span
+style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>ve
+had, I found the compile-&gt;run-&gt;segfault loop to be deeply irritating. I
+recognize that this is my own ignorance on display: if I spent more time in the
+language, I would certainly come to understand the pitfalls that were so
+regularly striking me.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span lang=ZH-CN style='font-size:16.5pt;font-family:"PMingLiU",serif;
+mso-bidi-font-family:PMingLiU;letter-spacing:.1pt'>&#25105;&#20351;&#29992;</span><span
+style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>C/C++</span><span
+lang=ZH-CN style='font-size:16.5pt;font-family:"PMingLiU",serif;mso-bidi-font-family:
+PMingLiU;letter-spacing:.1pt'>&#30340;&#21382;&#21490;&#24182;&#19981;&#22810;&#12290;&#35802;&#23454;&#30340;&#35762;&#65292;&#25105;&#30340;&#24378;&#31867;&#22411;&#35821;&#35328;&#30340;&#32534;&#31243;&#32463;&#39564;&#24182;&#19981;&#22810;&#12290;&#20316;&#20026;&#19968;&#20010;&#31995;&#32479;&#31649;&#29702;&#21592;&#65292;&#25105;&#20204;&#36890;&#24120;&#23601;&#26159;&#32473;&#26576;&#20154;&#30340;&#31243;&#24207;&#25171;&#34917;&#19969;&#65288;&#25105;&#20570;&#20102;&#24456;&#22810;&#36825;&#31181;&#20107;&#65292;&#20294;&#25171;&#34917;&#19969;&#19981;&#20687;&#20174;&#22836;&#24320;&#21457;&#19968;&#19979;&#19996;&#35199;&#65289;&#12290;&#22312;&#25105;&#25317;&#26377;&#30340;&#26377;&#38480;&#32463;&#39564;&#20013;&#65292;&#25105;&#21457;&#29616;&#32534;&#35793;</span><span
+style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>-&gt;</span><span
+lang=ZH-CN style='font-size:16.5pt;font-family:"PMingLiU",serif;mso-bidi-font-family:
+PMingLiU;letter-spacing:.1pt'>&#36816;&#34892;</span><span style='font-size:
+16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>-</span><span
+style='font-size:16.5pt;font-family:"PMingLiU",serif;mso-bidi-font-family:PMingLiU;
+letter-spacing:.1pt'>&gt;<span lang=ZH-CN>&#25490;&#38169;&#24490;&#29615;&#22826;&#20196;&#20154;&#24700;&#28779;&#12290;&#25105;&#25215;&#35748;&#36825;&#26159;&#25105;&#20010;&#20154;&#30340;&#26080;&#30693;&#65306;&#22914;&#26524;&#25105;&#22810;&#33457;&#26102;&#38388;&#26469;&#29702;&#35299;&#35821;&#35328;&#65292;&#25105;&#24403;&#28982;&#21487;&#20197;&#21457;&#29616;&#37027;&#20123;&#32463;&#24120;&#25171;&#20987;&#25105;&#30340;&#38519;&#38449;&#65292;</span></span><span
+style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>So
+it was that I set out to re-write a command line utility from Ruby to Rust. I
+have no intention of shipping it, or even really sharing it</span><span
+style='font-size:16.5pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+"Times New Roman";letter-spacing:.1pt'>&#8202;</span><span style='font-size:
+16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:Georgia;letter-spacing:.1pt'>—</span><span
+style='font-size:16.5pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+"Times New Roman";letter-spacing:.1pt'>&#8202;</span><span style='font-size:
+16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>it was just an
+excuse to learn the language. Here is what I observed:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span lang=ZH-CN style='font-size:16.5pt;font-family:SimSun;mso-ascii-font-family:
+Georgia;mso-hansi-font-family:Georgia;mso-bidi-font-family:"Times New Roman";
+letter-spacing:.1pt'>&#25152;&#20197;&#65292;&#25105;&#24320;&#22987;&#29992;</span><span
+style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+SimSun;mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>Rust</span><span
+lang=ZH-CN style='font-size:16.5pt;font-family:SimSun;mso-ascii-font-family:
+Georgia;mso-hansi-font-family:Georgia;mso-bidi-font-family:"Times New Roman";
+letter-spacing:.1pt'>&#37325;&#20889;&#19968;&#20010;</span><span
+style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+SimSun;mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>Ruby</span><span
+lang=ZH-CN style='font-size:16.5pt;font-family:SimSun;mso-ascii-font-family:
+Georgia;mso-hansi-font-family:Georgia;mso-bidi-font-family:"Times New Roman";
+letter-spacing:.1pt'>&#24320;&#21457;&#30340;&#21629;&#20196;&#34892;&#24037;&#20855;&#12290;&#25105;&#24182;&#27809;&#26377;&#24819;&#21334;&#23427;&#65292;&#25110;&#32773;&#20849;&#20139;&#23427;&#65292;&#23427;&#20165;&#20165;&#26159;&#25105;&#23398;&#20064;&#35821;&#35328;&#30340;&#19968;&#20010;&#20511;&#21475;&#65288;&#21160;&#21147;&#65289;&#12290;&#20197;&#19979;&#26159;&#25105;&#35266;&#23519;&#21040;&#30340;&#65306;</span><span
+style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+SimSun;mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:30.0pt;margin-right:0in;margin-bottom:
+1.5pt;margin-left:0in;line-height:normal;mso-outline-level:4;background:white'><span
+style='font-size:24.0pt;font-family:"Lucida Sans Unicode",sans-serif;
+mso-fareast-font-family:"Times New Roman";letter-spacing:-.25pt'>Cargo is nice<span
+style='mso-spacerun:yes'>  </span>Cargo&#36135;&#29289;&#65288;&#21253;&#65289;&#31649;&#29702;&#22120;&#38750;&#24120;&#22909;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>Cargo
+as the front-end tool to Rust projects is coming along super nicely. Creating a
+new Rust project, adding in testing, dependencies, etc was easy and super
+clear.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>Cargo&#26159;&#36127;&#36131;Rust&#39033;&#30446;&#31649;&#29702;&#30340;&#19968;&#20010;&#38750;&#24120;&#22909;&#30340;&#21069;&#31471;&#24037;&#20855;&#12290;&#21019;&#24314;&#19968;&#20010;&#26032;&#30340;Rust&#39033;&#30446;&#65292;&#28155;&#21152;&#27979;&#35797;&#12289;&#20381;&#36182;&#31561;&#31561;&#37117;&#38750;&#24120;&#30340;&#23481;&#26131;&#21644;&#31616;&#27905;&#12290;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:30.0pt;margin-right:0in;margin-bottom:
+1.5pt;margin-left:0in;line-height:normal;mso-outline-level:4;background:white'><span
+style='font-size:24.0pt;font-family:"Lucida Sans Unicode",sans-serif;
+mso-fareast-font-family:"Times New Roman";letter-spacing:-.25pt'>Expressive
+like a scripting language &#20687;&#33050;&#26412;&#35821;&#35328;&#19968;&#26679;&#23500;&#26377;&#34920;&#29616;&#21147;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>Rust
+can be quite expressive in a way that feels like a low level scripting
+language. Check this out:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>Rust&#23601;&#20687;&#19968;&#31181;&#38750;&#24120;&#23500;&#26377;&#34920;&#36798;&#21147;&#30340;&#24213;&#23618;&#33050;&#26412;&#35821;&#35328;&#12290;&#26356;&#22810;&#35831;&#30475;&#19979;&#38754;&#36825;&#20010;&#38142;&#25509;&#65306;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman"'><a
+href="https://gist.github.com/adamhjk/e296257b32818ee8691d.js">https://gist.github.com/adamhjk/e296257b32818ee8691d.js</a><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>While
+things like as_slice() and Vec&lt;String&gt; might take a little explaining,
+but it’s remarkably straightforward. Here is the review function:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>&#26377;&#20123;&#19996;&#35199;as_slice()&#21644;Vec&lt;String&gt;&#20063;&#35768;&#38656;&#35201;&#19968;&#28857;&#26102;&#38388;&#26469;&#35299;&#37322;&#65292;&#20294;&#23427;&#38750;&#24120;&#30340;&#30452;&#30333;&#12290;&#19979;&#38754;&#38142;&#25509;&#21487;&#20197;&#22238;&#39038;&#36825;&#20123;&#20989;&#25968;&#65306;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman"'><a
+href="https://gist.github.com/adamhjk/ead9de51d6f6d3aefeb2#file-review-rs">https://gist.github.com/adamhjk/ead9de51d6f6d3aefeb2#file-review-rs</a><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>Again,
+I don’t think this is any more difficult than it would have been in a scripting
+language. It takes a little getting used to the fact that, for example, I
+return an Option&lt;Path&gt; from have_dot_git(cwd), and use pattern matching
+to extract the value (or raise an error)</span><span style='font-size:16.5pt;
+font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman";
+letter-spacing:.1pt'>&#8202;</span><span style='font-size:16.5pt;font-family:
+"Georgia",serif;mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:
+Georgia;letter-spacing:.1pt'>—</span><span style='font-size:16.5pt;font-family:
+"Times New Roman",serif;mso-fareast-font-family:"Times New Roman";letter-spacing:
+.1pt'>&#8202;</span><span style='font-size:16.5pt;font-family:"Georgia",serif;
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+letter-spacing:.1pt'>but once you realize whats going on under the hood, it</span><span
+style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:Georgia;letter-spacing:.1pt'>’</span><span
+style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>s
+pretty great.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>&#20877;&#35828;&#19968;&#27425;&#65292;&#25105;&#19981;&#35748;&#20026;&#23427;&#20250;&#27604;&#19968;&#31181;&#33050;&#26412;&#35821;&#35328;&#26356;&#38590;&#12290;&#23427;&#38656;&#35201;&#19968;&#28857;&#26102;&#38388;&#26469;&#20064;&#24815;&#37027;&#20123;&#20107;&#23454;&#65292;&#27604;&#22914;&#65292;&#25105;&#20174;have_dot_git(cwd)&#36820;&#22238;&#19968;&#20010;&#36873;&#39033;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>Option&lt;Path&gt;&#65292;&#24182;&#19988;&#29992;&#27169;&#24335;&#21305;&#37197;&#26469;&#25277;&#21462;&#20540;&#65288;&#25110;&#32773;&#25243;&#20986;&#38169;&#35823;&#65289;-&#20294;&#24403;&#20320;&#35748;&#35782;&#21040;&#32617;&#23376;&#19979;&#38754;&#21457;&#29983;&#20160;&#20040;&#20107;&#24773;&#21518;(&#29702;&#35299;&#21518;)&#65292;&#20320;&#23601;&#20250;&#35273;&#24471;&#36825;&#24456;&#26834;&#12290;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:30.0pt;margin-right:0in;margin-bottom:
+1.5pt;margin-left:0in;line-height:normal;mso-outline-level:4;background:white'><span
+style='font-size:24.0pt;font-family:"Lucida Sans Unicode",sans-serif;
+mso-fareast-font-family:"Times New Roman";letter-spacing:-.25pt'>Strongly typed
+&#24378;&#31867;&#22411;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>In
+every other language that was strongly typed, I always felt like I was in a
+wrestling match with the compiler. I found it exceedingly difficult to trust
+that it was stopping me from doing something stupid, rather than getting in my
+way. (I recognize this is an emotional flaw of my own) Rust felt different for
+three reasons:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>&#22312;&#20219;&#20309;&#19968;&#31181;&#24378;&#31867;&#22411;&#35821;&#35328;&#20013;&#65292;&#25105;&#24635;&#26159;&#35273;&#24471;&#25105;&#21644;&#32534;&#35793;&#22120;&#22312;&#36739;&#21170;&#12290;&#25105;&#21457;&#29616;&#24456;&#38590;&#20449;&#20219;&#32534;&#35793;&#22120;&#65292;&#19982;&#20854;&#35828;&#23427;&#21487;&#20197;&#38459;&#27490;&#25105;&#20570;&#19968;&#20123;&#20667;&#20107;&#65292;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>&#36824;&#19981;&#22914;&#35828;&#23427;&#32769;&#26159;&#25377;&#36947;&#12290;&#65288;&#25105;&#25215;&#35748;&#36825;&#26159;&#25105;&#33258;&#24049;&#30340;&#19968;&#31181;&#24773;&#32490;&#32570;&#38519;&#65289;Rust&#20174;&#19979;&#38754;&#19977;&#26041;&#38754;&#35753;&#20154;&#35273;&#24471;&#19981;&#21516;&#65306;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;margin-bottom:9.0pt;
+margin-left:22.5pt;text-indent:-.25in;line-height:24.75pt;mso-list:l1 level1 lfo4;
+tab-stops:list .5in;background:white'><![if !supportLists]><span
+style='font-size:10.0pt;mso-bidi-font-size:16.5pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;letter-spacing:.1pt'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:16.5pt;font-family:"Georgia",serif;
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+letter-spacing:.1pt'>Its error messages are exceedingly clear, pointing you
+directly to what is going wrong, and often showing you the precise solution.
+(“Did you mean…”)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;margin-bottom:9.0pt;
+margin-left:22.5pt;text-indent:-.25in;line-height:24.75pt;mso-list:l1 level1 lfo4;
+tab-stops:list .5in;background:white'><![if !supportLists]><span
+style='font-size:10.0pt;mso-bidi-font-size:16.5pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;letter-spacing:.1pt'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:16.5pt;font-family:"Georgia",serif;
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+letter-spacing:.1pt'>&#23427;&#30340;&#32534;&#35793;&#38169;&#35823;&#20449;&#24687;&#38750;&#24120;&#30340;&#28165;&#26970;&#65292;&#30452;&#25509;&#25351;&#20986;&#21738;&#37324;&#38169;&#20102;&#65292;&#36824;&#32463;&#24120;&#32473;&#20320;&#25552;&#20379;&#31934;&#20934;&#30340;&#35299;&#20915;&#26041;&#26696;&#65288;“&#20320;&#26159;&#19981;&#26159;&#24819;…”</span><span
+lang=ZH-CN style='font-size:16.5pt;font-family:"PMingLiU",serif;mso-bidi-font-family:
+PMingLiU;letter-spacing:.1pt'>&#65289;</span><span style='font-size:16.5pt;
+font-family:"Georgia",serif;mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;margin-bottom:9.0pt;
+margin-left:22.5pt;text-indent:-.25in;line-height:24.75pt;mso-list:l1 level1 lfo4;
+tab-stops:list .5in;background:white'><![if !supportLists]><span
+style='font-size:10.0pt;mso-bidi-font-size:16.5pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;letter-spacing:.1pt'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:16.5pt;font-family:"Georgia",serif;
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+letter-spacing:.1pt'>The compile loop was very fast, and when my code compiled
+successfully, it&nbsp;<b>always ran exactly like I wanted it to</b>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;margin-bottom:9.0pt;
+margin-left:22.5pt;text-indent:-.25in;line-height:24.75pt;mso-list:l1 level1 lfo4;
+tab-stops:list .5in;background:white'><![if !supportLists]><span
+style='font-size:10.0pt;mso-bidi-font-size:16.5pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;letter-spacing:.1pt'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:16.5pt;font-family:"Georgia",serif;
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+letter-spacing:.1pt'>&#32534;&#35793;&#24490;&#29615;&#38750;&#24120;&#24555;&#65292;&#24403;&#31243;&#24207;&#25104;&#21151;&#32534;&#35793;&#21518;&#65292;&#23427;&#24635;&#26159;&#25353;&#25105;&#30340;&#24819;&#27861;&#20934;&#30830;&#30340;&#36816;&#34892;&#12290;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;margin-bottom:0in;margin-left:
+22.5pt;margin-bottom:.0001pt;text-indent:-.25in;line-height:24.75pt;mso-list:
+l1 level1 lfo4;tab-stops:list .5in;background:white'><![if !supportLists]><span
+style='font-size:10.0pt;mso-bidi-font-size:16.5pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;letter-spacing:.1pt'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:16.5pt;font-family:"Georgia",serif;
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+letter-spacing:.1pt'>The idea of borrowing, and the idea of lifetimes, takes
+some getting used to. However, the compiler really is acting in your best
+interest all the time, and again the error messages and rules are clear. There is
+no traditional garbage collection in Rust</span><span style='font-size:16.5pt;
+font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman";
+letter-spacing:.1pt'>&#8202;</span><span style='font-size:16.5pt;font-family:
+"Georgia",serif;mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:
+Georgia;letter-spacing:.1pt'>—</span><span style='font-size:16.5pt;font-family:
+"Times New Roman",serif;mso-fareast-font-family:"Times New Roman";letter-spacing:
+.1pt'>&#8202;</span><span style='font-size:16.5pt;font-family:"Georgia",serif;
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+letter-spacing:.1pt'>but it has very clear rules for how long things on the
+stack and heap will live. Those rules tie closely to scoping, in a way that
+feels really natural.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;margin-bottom:0in;margin-left:
+22.5pt;margin-bottom:.0001pt;text-indent:-.25in;line-height:24.75pt;mso-list:
+l1 level1 lfo4;tab-stops:list .5in;background:white'><![if !supportLists]><span
+style='font-size:10.0pt;mso-bidi-font-size:16.5pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;letter-spacing:.1pt'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:16.5pt;font-family:"Georgia",serif;
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+letter-spacing:.1pt'>&#20511;&#29992;&#12289;&#29983;&#21629;&#21608;&#26399;&#31561;&#27010;&#24565;&#38656;&#35201;&#28857;&#26102;&#38388;&#26469;&#20064;&#24815;&#12290;&#20294;&#26159;&#65292;&#32534;&#35793;&#22120;&#27599;&#27425;&#37117;&#21560;&#24341;&#20303;&#20320;&#30340;&#20852;&#36259;&#65292;&#21516;&#26102;&#38169;&#35823;&#20449;&#24687;&#21644;&#35268;&#21017;&#26159;&#28165;&#26224;&#30340;&#12290;Rust&#27809;&#26377;&#20256;&#32479;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;margin-bottom:0in;margin-left:
+22.5pt;margin-bottom:.0001pt;line-height:24.75pt;background:white'><span
+style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>&#30340;&#22403;&#22334;&#25910;&#38598;&#22120;-&#20294;&#23427;&#26377;&#38750;&#24120;&#28165;&#26224;&#30340;&#35268;&#21017;&#26469;&#25351;&#31034;&#22312;&#26632;&#21644;&#22534;&#19978;&#30340;&#19996;&#35199;&#35813;&#27963;&#22810;&#20037;&#12290;&#36825;&#20123;&#35268;&#21017;&#21644;&#21306;&#22495;&#32467;&#21512;&#30340;&#24456;&#32039;&#65292;&#35753;&#20320;&#35273;&#24471;&#24456;&#33258;&#28982;&#12290;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>Most
+importantly, for me, my code never segfaulted or panicked. This was an
+experience that I’ve never had in my life when working with a low level systems
+programming language. If the compiler accepted my input, it ran</span><span
+style='font-size:16.5pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+"Times New Roman";letter-spacing:.1pt'>&#8202;</span><span style='font-size:
+16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:Georgia;letter-spacing:.1pt'>—</span><span
+style='font-size:16.5pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+"Times New Roman";letter-spacing:.1pt'>&#8202;</span><span style='font-size:
+16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>fast and correctly.
+Period.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>&#23545;&#20110;&#25105;&#26368;&#37325;&#35201;&#30340;&#26159;&#65292;&#25105;&#30340;&#20195;&#30721;&#20174;&#26469;&#27809;&#26377;&#24322;&#24120;&#38169;&#35823;&#25110;&#32773;&#24656;&#24908;&#12290;&#36825;&#20123;&#37117;&#26159;&#25105;&#20197;&#21069;&#29992;&#24213;&#23618;&#31995;&#32479;&#32534;&#31243;&#35821;&#35328;&#20013;&#20174;&#26469;&#27809;&#26377;&#25317;&#26377;&#36807;&#30340;&#20307;&#39564;&#12290;&#22914;&#26524;&#32534;&#35793;&#22120;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>&#25509;&#21463;&#25105;&#30340;&#36755;&#20837;&#65292;&#23427;&#24320;&#22987;&#36816;&#34892;-&#24555;&#36895;&#24182;&#19988;&#20934;&#30830;&#12290;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:30.0pt;margin-right:0in;margin-bottom:
+1.5pt;margin-left:0in;line-height:normal;mso-outline-level:4;background:white'><span
+style='font-size:24.0pt;font-family:"Lucida Sans Unicode",sans-serif;
+mso-fareast-font-family:"Times New Roman";letter-spacing:-.25pt'>Libraries
+don’t really exist &#26377;&#20123;&#24211;&#36824;&#19981;&#23384;&#22312;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>Rust
+is still evolving,&nbsp;<a
+href="http://blog.rust-lang.org/2014/09/15/Rust-1.0.html">heading towards a 1.0
+release</a>. As a side effect, a lot of the higher level libraries just don’t
+exist, or haven’t been written. A good (trivial) example was a great command
+parsing library just doesn’t exist yet. There is one included in the standard
+library, but the interface is clunky at best. A few promising libraries existed
+on Github, but the best one (from an interface/functionality point of view)
+failed to compile on the latest version of Rust. (This was due to the fail!(..)
+macro being renamed to panic!(..)</span><span style='font-size:16.5pt;
+font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman";
+letter-spacing:.1pt'>&#8202;</span><span style='font-size:16.5pt;font-family:
+"Georgia",serif;mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:
+Georgia;letter-spacing:.1pt'>—</span><span style='font-size:16.5pt;font-family:
+"Times New Roman",serif;mso-fareast-font-family:"Times New Roman";letter-spacing:
+.1pt'>&#8202;</span><span style='font-size:16.5pt;font-family:"Georgia",serif;
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+letter-spacing:.1pt'>not a big deal, but a sign of the kind of things that are
+still evolving.)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>Rust&#36824;&#22312;&#28436;&#36827;&#65292;&#24555;&#21040;1.0&#20102;&#65288;&#35793;&#32773;&#65306;&#29616;&#22312;1.2&#37117;&#20986;&#26469;&#20102;&#65289;&#12290;&#20316;&#20026;&#19968;&#20010;&#21103;&#20316;&#29992;&#65292;&#35768;&#22810;&#39640;&#38454;&#24211;&#37117;&#36824;&#19981;&#23384;&#22312;&#65292;&#25110;&#32773;&#36824;&#27809;&#20154;&#20889;&#12290;&#19968;&#20010;&#22909;&#30340;&#65288;&#23567;&#65289;&#20363;&#23376;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>&#26159;&#21629;&#20196;&#34892;&#35821;&#27861;&#20998;&#26512;&#22120;&#30340;&#24211;&#36824;&#19981;&#23384;&#22312;&#12290;&#22312;&#26631;&#20934;&#24211;&#37324;&#26377;&#19968;&#20010;&#65292;&#20294;&#26159;&#30028;&#38754;&#27604;&#36739;&#36824;&#19981;&#22909;&#12290;Github&#20013;&#26377;&#19968;&#20123;&#26377;&#24076;&#26395;&#30340;&#24211;&#65292;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>&#20294;&#26159;&#26368;&#22909;&#30340;&#37027;&#20010;&#65288;&#20174;&#25509;&#21475;&#12289;&#21151;&#33021;&#24615;&#31561;&#26469;&#30475;&#65289;&#27809;&#26377;&#21150;&#27861;&#29992;&#26368;&#26032;&#30340;Rust&#26469;&#32534;&#35793;&#36890;&#36807;&#12290;&#65288;&#36825;&#26159;&#30001;&#20110;fail!(..)&#23439;&#34987;&#25913;&#20026;panic!(..)-&#19981;&#26159;&#19968;&#20214;&#22823;&#20107;&#65292;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>&#20294;&#20063;&#26159;&#19968;&#20214;&#35828;&#26126;Rust&#36824;&#22312;&#28436;&#36827;&#30340;&#20107;&#23454;&#12290;&#65289;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>Similarly,
+Cargo is great at fetching dependencies</span><span style='font-size:16.5pt;
+font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman";
+letter-spacing:.1pt'>&#8202;</span><span style='font-size:16.5pt;font-family:
+"Georgia",serif;mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:
+Georgia;letter-spacing:.1pt'>—</span><span style='font-size:16.5pt;font-family:
+"Times New Roman",serif;mso-fareast-font-family:"Times New Roman";letter-spacing:
+.1pt'>&#8202;</span><span style='font-size:16.5pt;font-family:"Georgia",serif;
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+letter-spacing:.1pt'>but there isn</span><span style='font-size:16.5pt;
+font-family:"Georgia",serif;mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:Georgia;letter-spacing:.1pt'>’</span><span
+style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>t
+a collection of what is available, a-la NPM, Rubygems, or CPAN.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>&#21516;&#26679;&#65292;Cargo&#21487;&#20197;&#24456;&#22909;&#30340;&#33719;&#21462;&#20381;&#36182;-&#20294;&#27809;&#26377;&#35828;&#26126;&#37027;&#20123;&#21253;&#21487;&#20197;&#33719;&#21462;&#65292;&#23601;&#20687;NPM,Rubygems&#25110;&#32773;CPAN&#37027;&#26679;&#12290;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:30.0pt;margin-right:0in;margin-bottom:
+1.5pt;margin-left:0in;line-height:normal;mso-outline-level:4;background:white'><span
+style='font-size:24.0pt;font-family:"Lucida Sans Unicode",sans-serif;
+mso-fareast-font-family:"Times New Roman";letter-spacing:-.25pt'>Final Thoughts
+on Rust &#20851;&#20110;Rust&#30340;&#26368;&#32456;&#24819;&#27861;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>Rust
+is a powerful, deeply well thought out systems programming language with a
+pretty amazing and useful set of features. (Generics, Traits, Pattern Matching,
+Actor concurrency, Borrowing</span><span style='font-size:16.5pt;font-family:
+"Times New Roman",serif;mso-fareast-font-family:"Times New Roman";letter-spacing:
+.1pt'>&#8202;</span><span style='font-size:16.5pt;font-family:"Georgia",serif;
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:Georgia;
+letter-spacing:.1pt'>—</span><span style='font-size:16.5pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman";letter-spacing:.1pt'>&#8202;</span><span
+style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>the
+list goes on) There is a tax on learning the surface area and </span><span
+style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:Georgia;letter-spacing:.1pt'>“</span><span
+style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>Rust
+Way</span><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:Georgia;letter-spacing:.1pt'>”</span><span
+style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>
+of solving a problem</span><span style='font-size:16.5pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman";letter-spacing:.1pt'>&#8202;</span><span
+style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:Georgia;letter-spacing:.1pt'>—</span><span
+style='font-size:16.5pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+"Times New Roman";letter-spacing:.1pt'>&#8202;</span><span style='font-size:
+16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>the language itself
+is simple, but has lots of different concepts to wrestle with.j<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>Rust&#26159;&#24378;&#22823;&#30340;&#65292;&#39640;&#24230;&#28145;&#24605;&#29087;&#34385;&#30340;&#31995;&#32479;&#32534;&#31243;&#35821;&#35328;&#65292;&#24102;&#26377;&#19968;&#20123;&#24456;&#22909;&#30340;&#12289;&#24456;&#26377;&#29992;&#30340;&#29305;&#24615;&#12290;&#65288;&#27867;&#22411;&#65292;&#29305;&#36136;&#65292;&#27169;&#24335;&#21305;&#37197;&#65292;Actor&#24182;&#21457;&#65292;&#20511;&#29992;-&#21015;&#34920;&#36824;&#24456;&#38271;&#65289;&#12290;&#37027;&#37324;&#38656;&#35201;&#19968;&#19979;&#31246;&#36127;&#26469;&#23398;&#20064;&#24182;&#29992;</span><span
+style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:Georgia;letter-spacing:.1pt'>“Rust&#26041;&#27861;</span><span
+style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>”&#26469;&#35299;&#20915;&#38382;&#39064;-&#35821;&#35328;&#26412;&#36523;&#26159;&#31616;&#21333;&#30340;&#65292;&#20294;&#38656;&#35201;&#21644;&#19968;&#20123;&#19981;&#21516;&#30340;&#27010;&#24565;&#36739;&#21170;&#12290;&#65288;&#35793;&#32773;&#65306;&#22914;&#26524;&#20320;&#20102;&#35299;&#20989;&#25968;&#24335;&#32534;&#31243;Scala,
+Haskell&#65292;&#23601;&#20250;&#35273;&#24471;&#23398;&#20064;Rust&#24456;&#24555;&#65289;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>That
+said, its the first time in my life I feel like I could trust myself to write
+fast, efficient, low level systems code. The compiler was your buddy, and the
+errors it fed me were useful and clear. When the language hits 1.0, and the
+ecosystem of libraries starts to heat up</span><span style='font-size:16.5pt;
+font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman";
+letter-spacing:.1pt'>&#8202;</span><span style='font-size:16.5pt;font-family:
+"Georgia",serif;mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:
+Georgia;letter-spacing:.1pt'>—</span><span style='font-size:16.5pt;font-family:
+"Times New Roman",serif;mso-fareast-font-family:"Times New Roman";letter-spacing:
+.1pt'>&#8202;</span><span style='font-size:16.5pt;font-family:"Georgia",serif;
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+letter-spacing:.1pt'>Rust is going to be a force to be reckoned with.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>&#36825;&#20040;&#35828;&#21543;&#65292;&#25105;&#31532;&#19968;&#27425;&#35273;&#24471;&#25105;&#21487;&#20197;&#30456;&#20449;&#33258;&#24049;&#21487;&#20197;&#24555;&#36895;&#20889;&#20986;&#19968;&#20010;&#26377;&#25928;&#29575;&#30340;&#24213;&#23618;&#31995;&#32479;&#20195;&#30721;&#12290;&#32534;&#35793;&#22120;&#23601;&#26159;&#20320;&#30340;&#20804;&#24351;&#65292;&#23427;&#25552;&#20379;&#30340;&#38169;&#35823;&#25552;&#31034;&#38750;&#24120;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>&#26377;&#29992;&#21644;&#28165;&#26224;&#12290;&#24403;&#23427;&#28436;&#36827;&#21040;1.0&#65292;&#24182;&#19988;&#24211;&#30340;&#29983;&#24577;&#31995;&#32479;&#24320;&#22987;&#21319;&#28201;&#26102;-Rust&#20272;&#35745;&#20250;&#25104;&#20026;&#19968;&#31181;&#26032;&#21183;&#21147;&#12290;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:30.0pt;margin-right:0in;margin-bottom:
+3.0pt;margin-left:0in;line-height:normal;mso-outline-level:3;background:white'><b><span
+style='font-size:27.0pt;font-family:"Lucida Sans Unicode",sans-serif;
+mso-fareast-font-family:"Times New Roman";letter-spacing:-.25pt'>Go<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>Lots
+of people have said lots of things about how amazing Go is. After spending even
+a few hours re-building something in the language, I see the appeal.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>&#35768;&#22810;&#20154;&#35828;&#20102;&#35768;&#22810;&#20851;&#20110;Go&#26377;&#22810;&#22909;&#30340;&#22909;&#35805;&#12290;&#24403;&#25105;&#33457;&#20102;&#20960;&#20010;&#23567;&#26102;&#29992;Go&#37325;&#26032;&#32534;&#20889;&#19968;&#20123;&#19996;&#35199;&#21518;&#65292;&#25105;&#26126;&#30333;&#20026;&#20160;&#20040;&#36825;&#20040;&#35828;&#12290;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:30.0pt;margin-right:0in;margin-bottom:
+1.5pt;margin-left:0in;line-height:normal;mso-outline-level:4;background:white'><span
+style='font-size:24.0pt;font-family:"Lucida Sans Unicode",sans-serif;
+mso-fareast-font-family:"Times New Roman";letter-spacing:-.25pt'>Go is small<span
+style='mso-spacerun:yes'>  </span>Go&#27604;&#36739;&#23567;&#24039;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>You
+can learn the surface area of the language super quickly, assuming you have
+ever programmed in anything C derived. There are pretty much only the things
+you already know how to use in the language: if/then/else, switch, for. They
+use the syntax you already know. They provide short hand for things that you
+could type verbosely, but don’t want to (:=, for example).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>&#22914;&#26524;&#20320;&#26377;&#19968;&#20123;C&#34893;&#29983;&#35821;&#35328;&#30340;&#32534;&#31243;&#32463;&#39564;&#65292;&#37027;&#20040;&#20320;&#21487;&#20197;&#24456;&#24555;&#30340;&#23398;&#20250;&#36825;&#38376;&#35821;&#35328;&#30340;&#19968;&#20123;&#34920;&#38754;&#39046;&#22495;&#12290;&#20320;&#31616;&#21333;&#30340;&#23398;&#20250;&#19968;&#19979;&#19996;&#35199;&#21518;&#65292;&#23601;&#21487;&#20197;&#24320;&#22987;&#20351;&#29992;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>&#36825;&#38376;&#35821;&#35328;&#20102;&#65306;if/then/else,switch,for&#12290;&#23427;&#20204;&#30340;&#35821;&#27861;&#20320;&#24050;&#32463;&#30693;&#36947;&#20102;&#12290;&#23427;&#25552;&#20379;&#19968;&#20123;&#36895;&#35760;&#35821;&#27861;&#26469;&#31616;&#21270;&#19968;&#20123;&#32321;&#29712;&#30340;&#25171;&#23383;&#24037;&#20316;&#12290;&#65288;&#27604;&#22914;
+:=</span><span lang=ZH-CN style='font-size:16.5pt;font-family:"PMingLiU",serif;
+mso-bidi-font-family:PMingLiU;letter-spacing:.1pt'>&#65289;</span><span
+style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>&#12290;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-top:30.0pt;margin-right:0in;margin-bottom:
+1.5pt;margin-left:0in;line-height:normal;mso-outline-level:4;background:white'><span
+style='font-size:24.0pt;font-family:"Lucida Sans Unicode",sans-serif;
+mso-fareast-font-family:"Times New Roman";letter-spacing:-.25pt'>Go is
+opinionated&#8202;—&#8202;about lots of things Go&#26159;&#22266;&#25191;&#24049;&#35265;&#30340;
+– &#24456;&#22810;&#26041;&#38754;&#37117;&#26159;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>When
+you read&nbsp;<a href="https://golang.org/doc/code.html">How to Write Go Code</a>&nbsp;it
+starts with telling you how to lay out the top level source directory for&nbsp;<i>everything
+you will write in Go</i>. The Go tooling knows how to take that structure and
+do the right thing with it</span><span style='font-size:16.5pt;font-family:
+"Times New Roman",serif;mso-fareast-font-family:"Times New Roman";letter-spacing:
+.1pt'>&#8202;</span><span style='font-size:16.5pt;font-family:"Georgia",serif;
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:Georgia;
+letter-spacing:.1pt'>—</span><span style='font-size:16.5pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman";letter-spacing:.1pt'>&#8202;</span><span
+style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>compile
+binaries that go into your </span><span style='font-size:16.5pt;font-family:
+"Georgia",serif;mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:
+Georgia;letter-spacing:.1pt'>‘</span><span style='font-size:16.5pt;font-family:
+"Georgia",serif;mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";letter-spacing:.1pt'>bin</span><span style='font-size:16.5pt;
+font-family:"Georgia",serif;mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:Georgia;letter-spacing:.1pt'>’</span><span
+style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>
+directory, run your tests, grab dependencies.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>&#24403;&#20320;&#35835;
+“&#24590;&#20040;&#32534;&#20889;Go&#20195;&#30721;”&#26102;&#65292;&#23427;&#24320;&#22987;&#21578;&#35785;&#20320;&#24590;&#26679;&#20174;&#39030;&#23618;&#28304;&#20195;&#30721;&#30446;&#24405;&#24320;&#22987;&#30340;&#27599;&#20214;&#19996;&#35199;&#20320;&#35813;&#24590;&#20040;&#29992;Go&#20889;&#12290;Go&#30340;&#24037;&#20855;&#38142;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>&#30693;&#36947;&#24590;&#26679;&#21462;&#24471;&#32467;&#26500;&#21644;&#20570;&#27491;&#30830;&#30340;&#20107;&#24773;-&#32534;&#35793;&#20108;&#36827;&#21046;&#21040;&#20320;&#30340;’bin’&#30446;&#24405;&#65292;&#36816;&#34892;&#20320;&#30340;&#27979;&#35797;&#65292;&#25429;&#33719;&#20381;&#36182;&#12290;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>The
+static output is nice</span><span style='font-size:16.5pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman";letter-spacing:.1pt'>&#8202;</span><span
+style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:Georgia;letter-spacing:.1pt'>—</span><span
+style='font-size:16.5pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+"Times New Roman";letter-spacing:.1pt'>&#8202;</span><span style='font-size:
+16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>and the reality
+that, whatever you compiled locally will be what your users consume feels
+great.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>&#38745;&#24577;&#36755;&#20986;&#26159;&#22909;&#30340;-&#29616;&#23454;&#26159;&#65292;&#20219;&#20309;&#20320;&#26412;&#22320;&#32534;&#35793;&#30340;&#37117;&#20250;&#26159;&#20320;&#29992;&#25143;&#28040;&#36153;&#30340;&#65292;&#24863;&#35273;&#19981;&#38169;&#12290;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:30.0pt;margin-right:0in;margin-bottom:
+1.5pt;margin-left:0in;line-height:normal;mso-outline-level:4;background:white'><span
+style='font-size:24.0pt;font-family:"Lucida Sans Unicode",sans-serif;
+mso-fareast-font-family:"Times New Roman";letter-spacing:-.25pt'>Go gets out of
+your way Go&#36991;&#20813;&#20320;&#30340;&#26041;&#27861;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>Where
+the Rust compiler made sure that what I expressed would result in working low
+level code, Go sits in the middle. The language is strongly typed, but in
+practice it seems to infer what you mean most of the time. For example:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>Rust&#32534;&#35793;&#22120;&#35753;&#20320;&#24456;&#30830;&#23450;&#20320;&#30340;&#24819;&#27861;&#20250;&#22914;&#20309;&#22312;&#24213;&#23618;&#20195;&#30721;&#20013;&#24037;&#20316;&#65292;Go&#22352;&#22312;&#20013;&#38388;&#12290;&#35821;&#35328;&#26159;&#24378;&#31867;&#22411;&#30340;&#65292;&#20294;&#23454;&#36341;&#26159;&#24863;&#35273;&#25512;&#26029;&#20986;&#22823;&#37096;&#20998;&#20320;&#30340;&#24819;&#27861;&#12290;&#20030;&#20363;&#65306;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman"'><a
+href="https://gist.github.com/adamhjk/5a475b8dd45971a4e814#file-dot_git_dir-go">https://gist.github.com/adamhjk/5a475b8dd45971a4e814#file-dot_git_dir-go</a><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>The
+only type annotations in that function are the inputs and the outputs</span><span
+style='font-size:16.5pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+"Times New Roman";letter-spacing:.1pt'>&#8202;</span><span style='font-size:
+16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:Georgia;letter-spacing:.1pt'>—</span><span
+style='font-size:16.5pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+"Times New Roman";letter-spacing:.1pt'>&#8202;</span><span style='font-size:
+16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>everything else
+just works. It feels fast, easy, approachable and very low hassle.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>&#21807;&#19968;&#30340;&#31867;&#22411;&#27880;&#37322;&#21151;&#33021;&#26159;&#36755;&#20837;&#21644;&#36755;&#20986;-&#20854;&#20182;&#30340;&#27599;&#20214;&#20107;&#23601;&#26159;&#24037;&#20316;&#12290;&#24863;&#35273;&#24555;&#36895;&#12289;&#23481;&#26131;&#12289;&#21487;&#20197;&#25509;&#36817;&#21644;&#38750;&#24120;&#23569;&#30340;&#28902;&#24700;&#12290;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:30.0pt;margin-right:0in;margin-bottom:
+1.5pt;margin-left:0in;line-height:normal;mso-outline-level:4;background:white'><span
+style='font-size:24.0pt;font-family:"Lucida Sans Unicode",sans-serif;
+mso-fareast-font-family:"Times New Roman";letter-spacing:-.25pt'>Go failed at
+runtime<span style='mso-spacerun:yes'>  </span>Go&#30340;&#36816;&#34892;&#26102;&#22833;&#36133;&#20102;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>It
+was very, very hard to get Rust to fail at runtime. The compiler made sure I checked
+every code path, always made sure I covered every angle. Go was more than happy
+to do what I told it</span><span style='font-size:16.5pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman";letter-spacing:.1pt'>&#8202;</span><span
+style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:Georgia;letter-spacing:.1pt'>—</span><span
+style='font-size:16.5pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+"Times New Roman";letter-spacing:.1pt'>&#8202;</span><span style='font-size:
+16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>while the compiler
+would stop me from being egregiously stupid, it wasn</span><span
+style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:Georgia;letter-spacing:.1pt'>’</span><span
+style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>t
+going to stop me from doing something like this:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>Rust&#36816;&#34892;&#26102;&#38750;&#24120;&#38750;&#24120;&#38590;&#20986;&#38169;&#12290;&#32534;&#35793;&#22120;&#35753;&#25105;&#30830;&#20449;&#25105;&#26816;&#26597;&#20102;&#27599;&#19968;&#20010;&#20195;&#30721;&#36335;&#24452;&#65292;&#24635;&#26159;&#35753;&#25105;&#30830;&#20449;&#25105;&#35206;&#30422;&#20102;&#25152;&#26377;&#35282;&#33853;&#12290;Go&#23601;&#20687;&#25105;&#35828;&#30340;&#37027;&#26679;&#65292;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>&#24037;&#20316;&#30340;&#24456;&#29245;
+– &#20294;&#26159;&#23427;&#30340;&#32534;&#35793;&#22120;&#20250;&#35753;&#25105;&#35273;&#24471;&#24456;&#20667;&#65292;&#23427;&#19981;&#20250;&#38459;&#27490;&#25105;&#20570;&#22914;&#19979;&#19968;&#20123;&#20107;&#24773;&#65306;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman"'><a
+href="https://gist.github.com/adamhjk/9c7eae1d053a1788f581#file-panic-go">https://gist.github.com/adamhjk/9c7eae1d053a1788f581#file-panic-go</a><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>Where
+line 9 there just blindly assumes the regex found a match, and causes quite the
+run-time error message. This was impossible <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>in
+Rust:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>&#31532;&#20061;&#34892;&#30450;&#30446;&#30340;&#20551;&#35774;regex&#21305;&#37197;&#19968;&#20010;&#32467;&#26524;&#65292;&#28982;&#21518;&#23548;&#33268;&#36816;&#34892;&#26102;&#38169;&#35823;&#20449;&#24687;&#12290;&#36825;&#22312;Rust&#20013;&#32477;&#19981;&#20250;&#21457;&#29983;&#12290;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman"'><a
+href="https://gist.github.com/adamhjk/2eb74d326242a9093f9e#file-current_branch-rs">https://gist.github.com/adamhjk/2eb74d326242a9093f9e#file-current_branch-rs</a><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>Because
+the return of my regex capture as an Option, the compiler knew I needed to deal
+with all the possible values. I literally couldn’t choose to ignore it. This
+happened when I wrote the code</span><span style='font-size:16.5pt;font-family:
+"Times New Roman",serif;mso-fareast-font-family:"Times New Roman";letter-spacing:
+.1pt'>&#8202;</span><span style='font-size:16.5pt;font-family:"Georgia",serif;
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:Georgia;
+letter-spacing:.1pt'>—</span><span style='font-size:16.5pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman";letter-spacing:.1pt'>&#8202;</span><span
+style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>in
+Go, I just wrote what I thought I wanted, then learned about my mistake at
+runtime (and it</span><span style='font-size:16.5pt;font-family:"Georgia",serif;
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:Georgia;
+letter-spacing:.1pt'>’</span><span style='font-size:16.5pt;font-family:"Georgia",serif;
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+letter-spacing:.1pt'>s a trivial fix.) In Rust, the compiler told me when I
+first tried the function that I hadn’t dealt with the None result of my
+Option&lt;Capture&gt; return.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>&#22240;&#20026;regex&#25429;&#33719;&#30340;&#36820;&#22238;&#31867;&#22411;&#26159;Option&#36873;&#39033;&#65292;&#32534;&#35793;&#22120;&#30693;&#36947;&#25105;&#38656;&#35201;&#22788;&#29702;&#25152;&#26377;&#21487;&#33021;&#30340;&#20540;&#12290;&#25105;&#27809;&#26377;&#21150;&#27861;&#36873;&#25321;&#24573;&#35270;&#23427;&#12290;&#36825;&#20010;&#22312;&#25105;&#20889;&#20195;&#30721;&#30340;&#26102;&#20505;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>&#23601;&#21457;&#29983;&#20102;-&#22312;Go&#20013;&#65292;&#25105;&#24819;&#25105;&#36825;&#20040;&#20889;&#23601;&#26159;&#25105;&#35201;&#30340;&#65292;&#28982;&#21518;&#22312;&#36816;&#34892;&#26102;&#25165;&#30693;&#36947;&#21738;&#37324;&#38169;&#20102;&#65288;&#36825;&#26159;&#20010;&#24456;&#23567;&#30340;fix</span><span
+lang=ZH-CN style='font-size:16.5pt;font-family:"PMingLiU",serif;mso-bidi-font-family:
+PMingLiU;letter-spacing:.1pt'>&#65289;</span><span style='font-size:16.5pt;
+font-family:"Georgia",serif;mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>&#22312;Rust&#20013;&#65292;&#32534;&#35793;&#22120;&#22312;&#25105;&#31532;&#19968;&#27425;&#23581;&#35797;&#36825;&#20010;&#20989;&#25968;&#26102;&#21578;&#35785;&#25105;&#65292;&#25105;&#36824;&#27809;&#26377;&#23545;Option&lt;Capture&gt;&#36820;&#22238;&#20540;&#22788;&#29702;None&#32467;&#26524;&#12290;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:30.0pt;margin-right:0in;margin-bottom:
+1.5pt;margin-left:0in;line-height:normal;mso-outline-level:4;background:white'><span
+style='font-size:24.0pt;font-family:"Lucida Sans Unicode",sans-serif;
+mso-fareast-font-family:"Times New Roman";letter-spacing:-.25pt'>Speed,
+accessibility, and libraries &#36895;&#24230;&#65292;&#26131;&#25509;&#36817;&#65292;&#36824;&#26377;&#24211;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>The
+trade-off is interesting. The Go code took far less time to write, the language
+was so accessible, and the ecosystem was strong. It let me work like I would
+have in a scripting language, while stopping the most egregious kinds of
+errors. Because the only language constructs are the most common constructs, it
+took no time at all to feel facile in the language.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>&#20195;&#20215;&#26159;&#20852;&#36259;&#12290;Go&#20195;&#30721;&#29992;&#26356;&#23569;&#30340;&#26102;&#38388;&#26469;&#20889;&#65292;&#35821;&#35328;&#23481;&#26131;&#25509;&#36817;&#65292;&#29983;&#24577;&#31995;&#32479;&#24378;&#22823;&#12290;&#23427;&#35753;&#25105;&#24863;&#35273;&#22312;&#29992;&#33050;&#26412;&#35821;&#35328;&#22312;&#24037;&#20316;&#65292;&#20294;&#21516;&#26102;&#36991;&#20813;&#20102;&#22823;&#22810;&#25968;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>&#24694;&#21517;&#26157;&#33879;&#30340;&#38169;&#35823;&#12290;&#22240;&#20026;&#35821;&#35328;&#21807;&#19968;&#30340;&#26500;&#36896;&#26159;&#38750;&#24120;&#21516;&#26679;&#30340;&#26500;&#36896;&#65292;&#26681;&#26412;&#27809;&#26377;&#26102;&#38388;&#20307;&#20250;&#21040;&#35821;&#35328;&#30340;&#28789;&#27963;&#24615;&#12290;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>Go
+had a huge library ecosystem, a clear way to find them, and an easy way to get
+them.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>Go&#26377;&#24040;&#22823;&#30340;&#24211;&#29983;&#24577;&#31995;&#32479;&#65292;&#24456;&#23481;&#26131;&#25214;&#21040;&#21644;&#33719;&#21462;&#23427;&#20204;&#12290;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:30.0pt;margin-right:0in;margin-bottom:
+3.0pt;margin-left:0in;line-height:normal;mso-outline-level:3;background:white'><b><span
+style='font-size:27.0pt;font-family:"Lucida Sans Unicode",sans-serif;
+mso-fareast-font-family:"Times New Roman";letter-spacing:-.25pt'>So.. Rust or
+Go? &#25152;&#20197;&#12290;&#12290;Rust&#36824;&#26159;Go?<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>The
+pragmatic answer is ‘horses for courses’, I guess. Go could clearly fill the
+same niche that people write Ruby, Python, or Perl for. It’s an easy,
+approachable language with a strong and fabulous ecosystem. I see why people
+love it. Static binaries, great ecosystem. Kind of a layup. I wrote the Go code
+probably twice as fast as as the Rust code.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>&#25105;&#29468;&#23454;&#29992;&#20027;&#20041;&#30340;&#22238;&#31572;&#26159;‘&#29289;&#23613;&#20854;&#21892;&#65292;&#37027;&#20010;&#23454;&#29992;&#29992;&#21738;&#20010;’&#12290;Go&#21487;&#20197;&#26367;&#20195;&#20154;&#20204;&#29992;Ruby&#65292;Pythong&#25110;&#32773;Perl&#25152;&#20889;&#30340;&#19996;&#35199;&#12290;&#23427;&#26159;&#19968;&#20010;&#31616;&#21333;&#65292;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>&#21487;&#25509;&#36817;&#30340;&#35821;&#35328;&#65292;&#21152;&#19978;&#24378;&#31867;&#22411;&#21644;&#38590;&#20197;&#32622;&#20449;&#30340;&#29983;&#24577;&#31995;&#32479;&#12290;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>&#25105;&#26126;&#30333;&#20154;&#20204;&#20026;&#20160;&#20040;&#21916;&#27426;&#23427;&#12290;&#38745;&#24577;&#20108;&#36827;&#21046;&#65292;&#24456;&#22909;&#30340;&#29983;&#24577;&#31995;&#32479;&#65292;&#37197;&#21512;&#30340;&#24456;&#22909;&#12290;&#25105;&#20889;Go&#20195;&#30721;&#22823;&#27010;&#27604;Rust&#24555;&#19968;&#20493;&#12290;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>The
+thing is, I liked Rust more. I&nbsp;<b>like</b>&nbsp;that it has pattern
+matching, generics, immutable data by default. I liked that if my code compiled
+at all, the odds that it did what I wanted were extraordinarily high. When I
+think about what an ecosystem built on those fundamentals would be like, I want
+to live in that world. It’s better than the world I live in on languages I
+already have an affinity for for a wide range of use cases, and lets me play in
+a space I haven’t really ever felt comfortable in. I’m pretty sure the advice
+that Rust is amazing where you would use C/C++, and Go is amazing where you
+would use Ruby or Python is true. However, I think once Rusts ecosystem takes
+off, it will start being a great choice for the Ruby/Python niche as well.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><b style='mso-bidi-font-weight:normal'><span style='font-size:16.5pt;
+font-family:"Georgia",serif;mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>&#20294;&#26159;&#65292;&#25105;&#26356;&#21916;&#27426;Rust&#12290;&#25105;&#21916;&#27426;&#23427;&#26377;&#27169;&#24335;&#21305;&#37197;&#65292;&#27867;&#22411;&#65292;&#32570;&#30465;&#30340;&#19981;&#21487;&#21464;&#25968;&#25454;&#12290;&#25105;&#21916;&#27426;&#22914;&#26524;&#25105;&#30340;&#20195;&#30721;&#32534;&#35793;&#36890;&#36807;&#65292;&#31243;&#24207;&#25353;&#25105;&#35774;&#35745;&#30340;&#24847;&#24895;&#36816;&#34892;&#30340;<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><b style='mso-bidi-font-weight:normal'><span style='font-size:16.5pt;
+font-family:"Georgia",serif;mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>&#21487;&#33021;&#24615;&#26159;&#26497;&#39640;&#30340;&#12290;&#24403;&#25105;&#24819;&#35937;&#19968;&#20010;&#29983;&#24577;&#31995;&#32479;&#23558;&#22312;&#36825;&#26679;&#30340;&#19968;&#20010;&#22522;&#30784;&#19978;&#24314;&#31435;&#20986;&#26469;&#26102;&#65292;&#25105;&#24895;&#24847;&#27963;&#22312;&#37027;&#20010;&#19990;&#30028;&#37324;&#12290;</span></b><span
+style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>&#36825;&#27604;&#25105;&#20381;&#36182;&#22823;&#37327;&#35821;&#35328;&#29992;&#20363;&#65292;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>&#24182;&#19988;&#35753;&#25105;&#27809;&#26377;&#30495;&#27491;&#24863;&#35273;&#21040;&#33298;&#36866;&#30340;&#31354;&#38388;&#30340;&#19990;&#30028;&#35201;&#22909;&#12290;&#25105;&#24456;&#30830;&#23450;&#22914;&#26524;&#20320;&#29992;C/C++&#30340;&#35805;&#65292;Rust&#23558;&#38750;&#24120;&#21560;&#24341;&#20320;&#12290;&#32780;&#20320;&#29992;Ruby&#25110;Python&#30340;&#35805;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>Go&#23545;&#20320;&#26356;&#26377;&#21560;&#24341;&#21147;&#12290;&#28982;&#32780;&#65292;&#25105;&#24819;&#19968;&#26086;Rusts&#29983;&#24577;&#31995;&#32479;&#36215;&#39134;&#65292;&#23427;&#23558;&#21516;&#26102;&#21560;&#24341;&#37027;&#20123;&#20351;&#29992;Ruby/Python&#30340;&#20154;&#12290;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>I
+was reminded of a lesson I learned about executive hiring</span><span
+style='font-size:16.5pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+"Times New Roman";letter-spacing:.1pt'>&#8202;</span><span style='font-size:
+16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:Georgia;letter-spacing:.1pt'>—</span><span
+style='font-size:16.5pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+"Times New Roman";letter-spacing:.1pt'>&#8202;</span><span style='font-size:
+16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>rule number one is
+that they have to be amazing at something. Someone who is just </span><span
+style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:Georgia;letter-spacing:.1pt'>“</span><span
+style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>good</span><span
+style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:Georgia;letter-spacing:.1pt'>”</span><span
+style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>
+at everything won</span><span style='font-size:16.5pt;font-family:"Georgia",serif;
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:Georgia;
+letter-spacing:.1pt'>’</span><span style='font-size:16.5pt;font-family:"Georgia",serif;
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+letter-spacing:.1pt'>t, in general, actually turn out to be great. Go felt that
+way to me</span><span style='font-size:16.5pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman";letter-spacing:.1pt'>&#8202;</span><span
+style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:Georgia;letter-spacing:.1pt'>—</span><span
+style='font-size:16.5pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+"Times New Roman";letter-spacing:.1pt'>&#8202;</span><span style='font-size:
+16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>it was good at
+everything, but nothing grabbed me and made me feel excited in a way I wasn’t
+already about something else in my ecosystem. Rust is absolutely amazing at
+ensuring the code you write is correct and safe at runtime</span><span
+style='font-size:16.5pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+"Times New Roman";letter-spacing:.1pt'>&#8202;</span><span style='font-size:
+16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:Georgia;letter-spacing:.1pt'>—</span><span
+style='font-size:16.5pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+"Times New Roman";letter-spacing:.1pt'>&#8202;</span><span style='font-size:
+16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>it</span><span
+style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:Georgia;letter-spacing:.1pt'>’</span><span
+style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>s
+a revelation<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>&#25105;&#35760;&#24471;&#19968;&#27425;&#39640;&#23618;&#25307;&#32856;&#35268;&#21017;&#33719;&#21462;&#30340;&#25945;&#35757;&#65292;&#31532;&#19968;&#26465;&#26159;&#20182;/&#22905;&#24517;&#39035;&#22312;&#26576;&#20123;&#26041;&#38754;&#35753;&#20154;&#24778;&#35766;.&#19968;&#20010;&#22312;&#24456;&#22810;&#26041;&#38754;“&#22909;”&#30340;&#20154;&#65292;&#36890;&#24120;&#26469;&#35828;&#19981;&#26159;&#26497;&#20339;&#30340;&#12290;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>Go&#23601;&#26159;&#32473;&#25105;&#36825;&#31181;&#24863;&#35273;-&#23427;&#22312;&#27599;&#19968;&#26041;&#38754;&#37117;&#22909;&#65292;&#20294;&#27809;&#26377;&#25235;&#20303;&#25105;&#30340;&#24515;&#21644;&#35753;&#25105;&#35273;&#24471;&#22240;&#20026;&#22312;&#25105;&#24050;&#26377;&#30340;&#29983;&#24577;&#31995;&#32479;&#37324;&#38754;&#27809;&#26377;&#36825;&#20123;&#19996;&#35199;&#32780;&#35273;&#24471;&#38750;&#24120;&#20852;&#22859;&#65292;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>Rust&#38750;&#24120;&#36855;&#20154;&#30340;&#22320;&#26041;&#22312;&#20110;&#30830;&#20445;&#20320;&#20889;&#30340;&#20195;&#30721;&#26159;&#27491;&#30830;&#30340;&#21644;&#36816;&#34892;&#26102;&#23433;&#20840;&#30340;-&#36825;&#26159;&#19968;&#31181;&#21551;&#31034;&#12290;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:22.5pt;line-height:24.75pt;background:
+white'><span style='font-size:16.5pt;font-family:"Georgia",serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:.1pt'>You
+should definitely give both a try.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=ZH-CN style='font-family:"Times New Roman",serif;
+mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:
+Calibri;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi'>&#20320;&#24212;&#35813;&#35201;&#20004;&#32773;&#21516;&#26102;&#35797;&#19968;&#19979;&#12290;</span></p>
+
+</div>
+
+</body>
+
+</html>
