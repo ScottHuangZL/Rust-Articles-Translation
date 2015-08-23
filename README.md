@@ -1,3 +1,4 @@
 #Rust Articles Translation
-## [1. Rust and GO](https://github.com/ScottHuangZL/Rust-Articles-Translation/blob/master/Rust%20and%20GO.md "1.Rust and GO")  - Translate @ August 22, 2015
-## [2. Arrays and Vectors](https://github.com/ScottHuangZL/Rust-Articles-Translation/blob/master/Arrays%20and%20Vectors%20-%20Chinese.md "2.Arrays and Vectors")  - Translate @ August 22, 2015
+## [1. Arrays and Vectors | 数组和向量](https://github.com/ScottHuangZL/Rust-Articles-Translation/blob/master/Arrays%20and%20Vectors%20-%20Chinese.md "1. Arrays and Vectors | 数组和向量")  - Translate @ August 22, 2015
+## [2.Rust and GO | Rust 和 GO](https://github.com/ScottHuangZL/Rust-Articles-Translation/blob/master/Rust%20and%20GO.md "2.Rust and GO | Rust 和 GO")  - Translate @ August 22, 2015
+## [3.Criticizing the Rust Language, and Why C/C++ Will Never Die | 批判Rust语言，以及C/C++为什么永远不会死](https://github.com/ScottHuangZL/Rust-Articles-Translation/blob/master/Rust%20and%20GO.md "3.Criticizing the Rust Language, and Why C/C++ Will Never Die | 批判Rust语言，以及C/C++为什么永远不会死")  - Translate @ August 22, 2015
