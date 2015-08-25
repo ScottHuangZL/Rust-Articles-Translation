@@ -1,6 +1,6 @@
 原文： https://github.com/nrc/r4cppp/blob/master/unique.md
 翻译者： Scott Huang 
-翻译日期： Agust 24, 2015 于厦门
+翻译日期： Agust 25, 2015 于厦门
 
 # Unique pointers | 独一无二的指针（所有权指针）
 
