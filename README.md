@@ -14,5 +14,5 @@ Note: Start from August 29, I remove the original English text, and only left th
 ####[6.Reference counted and raw pointers | 引用计数和原始指针](https://github.com/ScottHuangZL/Rust-Articles-Translation/blob/master/r4cpp%20-%20Rc%20and%20raw%20pointers.md "6.Reference counted and raw pointers | 引用计数和原始指针")  - Translate @ August 30, 2015
 ####[7.Data types | 数据类型](https://github.com/ScottHuangZL/Rust-Articles-Translation/blob/master/r4cpp%20-%20Data%20types.md "7.Data types | 数据类型")  - Translate @ Sep 6, 2015
 
-####[8.Destructuring 解构](https://github.com/ScottHuangZL/Rust-Articles-Translation/blob/master/r4cpp%20-%20Destructuring "8.Destructuring 解构")  - Translate @ Sep 10, 2015
+####[8.Destructuring 解构](https://github.com/ScottHuangZL/Rust-Articles-Translation/blob/master/r4cpp%20-%20Destructuring.md "8.Destructuring 解构")  - Translate @ Sep 10, 2015
 
