@@ -16,3 +16,4 @@ Note: Start from August 29, I remove the original English text, and only left th
 
 ####[8.Destructuring 解构](https://github.com/ScottHuangZL/Rust-Articles-Translation/blob/master/r4cpp%20-%20Destructuring.md "8.Destructuring 解构")  - Translate @ Sep 10, 2015
 
+####[9.String VS &str 在Rust函数中](https://github.com/ScottHuangZL/Rust-Articles-Translation/blob/master/string-vs-str-in-rust-functions.md "9.String VS &str 在Rust函数中")  - Translate @ Sep 12, 2015
