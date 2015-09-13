@@ -1,5 +1,5 @@
 * 原文： 
-    * http://hermanradtke.com/2015/05/03/string-vs-str-in-rust-functions.html
+    * http://hermanradtke.com/2015/05/06/creating-a-rust-function-that-accepts-string-or-str.html
     * Written by Herman J. Radtke III on 06 May 2015
 * 翻译者： Scott Huang
 * 翻译日期： Sep 13, 2015 于厦门
