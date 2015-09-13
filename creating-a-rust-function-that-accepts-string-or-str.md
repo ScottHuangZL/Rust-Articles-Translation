@@ -35,7 +35,7 @@ let person = Person::new(name.as_ref());
 
 #Into conversions  Into转换
 
-我们可以用Into trait来使我们的函数更容易被使用者调用。这一特性将自动转换为一个&str到一个string。如果我们已经有了一个String，则没有转换发生。
+我们可以用[Into trait](http://doc.rust-lang.org/nightly/core/convert/trait.Into.html)来使我们的函数更容易被使用者调用。这一特性将自动转换为一个&str到一个string。如果我们已经有了一个String，则没有转换发生。
 ```rust
 struct Person {
     name: String,
@@ -53,9 +53,9 @@ fn main() {
 }
 ```
  
-这个new()语法看起来有点不同。我们使用泛型和特性来告诉Rust那个S类型必须为Sring类型实现Into特质。String类型实现`Into<String>`为空操作，因为我们已经有一个String。 `&str`类型实现`Into<String>`采用相同的`.to_string()`方法像在我们原本在new()函数做的那样。所以我们不是回避需要`.to_string()`调用，但我们正在为调用者取走调用需求。你可能会问，如果使用`Into<String>`会影响性能吗，答案是否定的。Rust使用静态调度和单型的概念在编译期来处理所有的这些。
+这个new()语法看起来有点不同。我们使用[泛型](http://doc.rust-lang.org/nightly/book/generics.html)和[特性](http://doc.rust-lang.org/nightly/book/traits.html)来告诉Rust那个S类型必须为Sring类型实现Into特质。String类型实现`Into<String>`为空操作，因为我们已经有一个String。 `&str`类型实现`Into<String>`采用相同的`.to_string()`方法像在我们原本在new()函数做的那样。所以我们不是回避需要`.to_string()`调用，但我们正在为调用者取走调用需求。你可能会问，如果使用`Into<String>`会影响性能吗，答案是否定的。Rust使用[静态调度](http://doc.rust-lang.org/nightly/book/trait-objects.html#static-dispatch)和[单型](http://stackoverflow.com/questions/14189604/what-is-monomorphisation-with-context-to-c/14198060#14198060)的概念在编译期来处理所有的这些。
 
-别担心那些像静态调度和单型的事情会混淆不清。你只需要知道使用上面的语法你可以创建一个可以同时接受String和&str的函数。如果你认为`fn new<S: Into<String>>(name:S) -> Person {`拥有大量的语法，它是。重要的是要指出，`Into<String>`没有什么特别的，它只是一个特性，是Rust标准库的一部分。如果你想的话，你可以自己实现这一特性。你可以实现类似的你发现有用的特质并把他们发布到`crates.io`。所有这些用户创建能力使得Rust成为一个令人敬畏的语言。
+别担心那些像静态调度和单型的事情会混淆不清。你只需要知道使用上面的语法你可以创建一个可以同时接受String和&str的函数。如果你认为`fn new<S: Into<String>>(name:S) -> Person {`拥有大量的语法，它是。重要的是要指出，`Into<String>`没有什么特别的，它只是一个特性，是Rust标准库的一部分。如果你想的话，你可以自己实现这一特性。你可以实现类似的你发现有用的特质并把他们发布到[crates.io](https://crates.io/)。所有这些用户创建能力使得Rust成为一个令人敬畏的语言。
 
 #Another Way To Write Person::new() 另外一种写Person::new()的方法
 
