@@ -214,3 +214,4 @@ fn main() {
 ##Related
 
 * [Creating a Rust function that accepts String or &str](http://hermanradtke.com/2015/05/06/creating-a-rust-function-that-accepts-string-or-str.html)
+* [中文](https://github.com/ScottHuangZL/Rust-Articles-Translation/blob/master/createing-a-rust-function-that-accepts-string-or-str.md)

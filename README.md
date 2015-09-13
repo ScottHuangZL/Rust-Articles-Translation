@@ -17,3 +17,6 @@ Note: Start from August 29, I remove the original English text, and only left th
 ####[8.Destructuring 解构](https://github.com/ScottHuangZL/Rust-Articles-Translation/blob/master/r4cpp%20-%20Destructuring.md "8.Destructuring 解构")  - Translate @ Sep 10, 2015
 
 ####[9.String VS &str 在Rust函数中](https://github.com/ScottHuangZL/Rust-Articles-Translation/blob/master/string-vs-str-in-rust-functions.md "9.String VS &str 在Rust函数中")  - Translate @ Sep 12, 2015
+
+####[10.Creating a Rust function that accepts String or &str 创建一个接受String或&str的Rust函数](https://github.com/ScottHuangZL/Rust-Articles-Translation/blob/master/creating-a-rust-function-that-accepts-string-or-str.md "10.Creating a Rust function that accepts String or &str 创建一个接受String或&str的Rust函数")  - Translate @ Sep 13, 2015
+
