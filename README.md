@@ -20,3 +20,4 @@ Note: Start from August 29, I remove the original English text, and only left th
 
 ####[10.Creating a Rust function that accepts String or &str 创建一个接受String或&str的Rust函数](https://github.com/ScottHuangZL/Rust-Articles-Translation/blob/master/creating-a-rust-function-that-accepts-string-or-str.md "10.Creating a Rust function that accepts String or &str 创建一个接受String或&str的Rust函数")  - Translate @ Sep 13, 2015
 
+####[11.Creating a Rust function that returns String or &str 创建一个返回String或&str的Rust函数](https://github.com/ScottHuangZL/Rust-Articles-Translation/blob/master/creating-a-rust-function-that-returns-string-or-str.md "11.Creating a Rust function that returns String or &str 创建一个返回String或&str的Rust函数")  - Translate @ Sep 15, 2015
