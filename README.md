@@ -1,4 +1,4 @@
-Rust Articles Translation
+# Rust Articles Translation
 ====================
 
 Note: Start from August 29, I remove the original English text, and only left the Chinese translation, it make the full article read more smoothly and avoid fragment.
@@ -24,7 +24,10 @@ Note: Start from August 29, I remove the original English text, and only left th
 
 ####[12.Graphs and arena allocation 图与竞技场分配](https://github.com/ScottHuangZL/Rust-Articles-Translation/blob/master/r4cpp%20-%20Graphs and arena allocation.md "12.Graphs and arena allocation 图与竞技场分配")  - Translate @ Sep 19, 2015
 
-####[Why is a rust executable large 为什么Rust可执行程序巨大]
-(https://github.com/ScottHuangZL/Rust-Articles-Translation/blob/master/why-is-a-rust-executable-large.md) - Translate @ Jun 28, 2016
+
+####[13. Why is a rust executable large 为什么Rust可执行程序巨大](https://github.com/ScottHuangZL/Rust-Articles-Translation/blob/master/why-is-a-rust-executable-large.md "13. Why is a rust executable large 为什么Rust可执行程序巨大")  - Translate @ Jun 28, 2016
+
+
+
 
 
