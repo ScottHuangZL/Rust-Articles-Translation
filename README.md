@@ -23,3 +23,8 @@ Note: Start from August 29, I remove the original English text, and only left th
 ####[11.Creating a Rust function that returns String or &str 创建一个返回String或&str的Rust函数](https://github.com/ScottHuangZL/Rust-Articles-Translation/blob/master/creating-a-rust-function-that-returns-string-or-str.md "11.Creating a Rust function that returns String or &str 创建一个返回String或&str的Rust函数")  - Translate @ Sep 15, 2015
 
 ####[12.Graphs and arena allocation 图与竞技场分配](https://github.com/ScottHuangZL/Rust-Articles-Translation/blob/master/r4cpp%20-%20Graphs and arena allocation.md "12.Graphs and arena allocation 图与竞技场分配")  - Translate @ Sep 19, 2015
+
+####[Why is a rust executable large 为什么Rust可执行程序巨大]
+(https://github.com/ScottHuangZL/Rust-Articles-Translation/blob/master/why-is-a-rust-executable-large.md) - Translate @ Jun 28, 2016
+
+
